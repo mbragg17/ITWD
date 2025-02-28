@@ -1,0 +1,85 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Main Menu Styles using element and class selectors */
+.menu {
+  background-color: #004080;
+  padding: 10px 0;
+  text-align: center;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;  /* Flexbox layout for the menu */
+}
+.menu li {
+  margin: 0 15px;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+/* Hover effect on links */
+.menu a:hover {
+  color: #ffcc00;
+}
+
+/* Main content container with padding */
+main {
+  padding: 20px;
+}
+
+/* Headings styling */
+h1, h2, h3 {
+  color: #004080;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+table, th, td {
+  border: 1px solid #ccc;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Image container styles */
+figure {
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: #fff;
+}
+figure img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Footer styles using an ID selector */
+#footer {
+  background-color: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+/* Additional class for custom margin */
+.margin-bottom {
+  margin-bottom: 20px;
+}
