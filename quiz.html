@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PWA Quiz - Progressive Web Applications</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="quiz.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="what-is-pwa.html">What is a PWA?</a></li>
+        <li><a href="pwa-benefits-challenges.html">Benefits &amp; Challenges</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>PWA Self-Assessment Quiz</h1>
+    <form id="quizForm">
+      <fieldset>
+        <legend>1. What is the purpose of a Service Worker in PWAs?</legend>
+        <label><input type="radio" name="q1" value="a" /> Styling web pages</label><br />
+        <label><input type="radio" name="q1" value="b" /> Handling background tasks and offline caching</label><br />
+        <label><input type="radio" name="q1" value="c" /> Sending emails</label><br />
+        <label><input type="radio" name="q1" value="d" /> Optimizing SEO</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Which file defines the name, icons, and start URL of a PWA?</legend>
+        <label><input type="radio" name="q2" value="a" /> index.html</label><br />
+        <label><input type="radio" name="q2" value="b" /> styles.css</label><br />
+        <label><input type="radio" name="q2" value="c" /> manifest.json</label><br />
+        <label><input type="radio" name="q2" value="d" /> config.js</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. What does 'responsive design' ensure in a PWA?</legend>
+        <label><input type="radio" name="q3" value="a" /> It resizes images only</label><br />
+        <label><input type="radio" name="q3" value="b" /> It ensures usability across devices</label><br />
+        <label><input type="radio" name="q3" value="c" /> It secures user data</label><br />
+        <label><input type="radio" name="q3" value="d" /> It enables push notifications</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. Fill in the blank: ________ allows PWAs to work offline and handle network requests in the background.</legend>
+        <input type="text" name="q4" />
+      </fieldset>
+
+      <fieldset>
+        <legend>5. Select all the core features of a PWA:</legend>
+        <label><input type="checkbox" name="q5" value="a" /> App Store only access</label><br />
+        <label><input type="checkbox" name="q5" value="b" /> Works offline</label><br />
+        <label><input type="checkbox" name="q5" value="c" /> Push notifications</label><br />
+        <label><input type="checkbox" name="q5" value="d" /> Responsive design</label>
+      </fieldset>
+
+      <button type="submit">Submit Quiz</button>
+      <button type="button" onclick="resetQuiz()">Restart Quiz</button>
+    </form>
+
+    <section id="results"></section>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>

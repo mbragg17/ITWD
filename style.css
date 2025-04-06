@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;  /* Flexbox layout for the menu */
+  justify-content: center;
 }
 .menu li {
   margin: 0 15px;
@@ -29,7 +29,6 @@ body {
   font-size: 16px;
   transition: color 0.3s ease;
 }
-/* Hover effect on links */
 .menu a:hover {
   color: #ffcc00;
 }
@@ -37,6 +36,8 @@ body {
 /* Main content container with padding */
 main {
   padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Headings styling */
@@ -82,4 +83,50 @@ figure img {
 /* Additional class for custom margin */
 .margin-bottom {
   margin-bottom: 20px;
+}
+
+/* Quiz styles */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+legend {
+  font-weight: bold;
+  color: #004080;
+}
+button {
+  background-color: #004080;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #003060;
+}
+#results {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e0f0ff;
+  border: 1px solid #99c;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.correct {
+  color: green;
+}
+.incorrect {
+  color: red;
 }
