@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Introduction – PWAs</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="brand">PWA Explorer</a>
+        <button class="hamburger"
+                aria-label="Toggle menu"
+                aria-controls="nav-menu"
+                aria-expanded="false">
+          ☰
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="topic1.html">Introduction</a></li>
+          <li><a href="topic2.html">Features & Case Study</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <main class="container">
+    <h1>What Are Progressive Web Apps?</h1>
+    <section>
+      <h2>Definition</h2>
+      <p>Progressive Web Apps (PWAs) are web applications that use modern web capabilities to deliver an app-like user experience. They load like regular web pages but offer functionalities such as offline access, push notifications, and device hardware integration when available.</p>
+    </section>
+
+    <section>
+      <h2>Core Principles</h2>
+      <ol>
+        <li><strong>Progressive enhancement:</strong> Works for every user, regardless of browser choice.</li>
+        <li><strong>Responsive design:</strong> Adapts to various screen sizes and orientations.</li>
+        <li><strong>Connectivity independent:</strong> Supports offline or low-quality networks through service workers.</li>
+        <li><strong>App-like interaction:</strong> Feels like a native application with smooth animations and navigation.</li>
+        <li><strong>Fresh:</strong> Always up-to-date via service worker updates.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Historical Context</h2>
+      <p>The term “Progressive Web App” was coined by Google in 2015. Early adopters like Twitter Lite and Pinterest demonstrated dramatic improvements in load time, engagement, and user retention. Since then, major frameworks (Angular, React, Vue) have provided built-in PWA support, and all modern browsers now deliver core APIs.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 PWA Explorer</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu   = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+      navMenu.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

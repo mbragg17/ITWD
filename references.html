@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>References – PWAs</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="brand">PWA Explorer</a>
+        <button class="hamburger"
+                aria-label="Toggle menu"
+                aria-controls="nav-menu"
+                aria-expanded="false">
+          ☰
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="topic1.html">Introduction</a></li>
+          <li><a href="topic2.html">Features & Case Study</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- References -->
+  <main class="container">
+    <h1>References & Resources</h1>
+
+    <h2>Official Documentation</h2>
+    <ul>
+      <li>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps">
+          MDN: Progressive web apps
+        </a> – Comprehensive guide to PWA concepts, APIs, and best practices.
+      </li>
+      <li>
+        <a href="https://web.dev/progressive-web-apps/">
+          web.dev: Progressive Web Apps
+        </a> – Google’s official PWA checklist and tutorials.
+      </li>
+    </ul>
+
+    <h2>Case Studies & Articles</h2>
+    <ul>
+      <li>
+        Addy Osmani. “Progressive Web Apps: The Future of the Mobile Web.” <em>Smashing Magazine</em>, 2017.  
+      </li>
+      <li>
+        Jeremy Keith. “Learning Progressive Web Apps.” <em>O’Reilly Media</em>, 2018.  
+      </li>
+    </ul>
+
+    <h2>Tools & Tutorials</h2>
+    <ul>
+      <li>
+        <a href="https://developers.google.com/web/tools/lighthouse">
+          Lighthouse
+        </a> – Auditing tool to assess PWA performance and compliance.
+      </li>
+      <li>
+        <a href="https://github.com/GoogleChrome/workbox">
+          Workbox
+        </a> – Google’s libraries for generating service workers and runtime caching.
+      </li>
+    </ul>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 PWA Explorer</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu   = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+      navMenu.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

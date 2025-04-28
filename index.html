@@ -2,72 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progressive Web Applications - Home</title>
-  <!-- Link to external CSS -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Main page for PWA research project -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progressive Web Apps – Home</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Consistent Main Menu -->
+  <!-- Navigation -->
   <header>
-    <nav class="menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="what-is-pwa.html">What is a PWA?</a></li>
-        <li><a href="pwa-benefits-challenges.html">Benefits &amp; Challenges</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        
-        <li><a href="quiz.html">Quiz</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="brand">PWA Explorer</a>
+        <button class="hamburger"
+                aria-label="Toggle menu"
+                aria-controls="nav-menu"
+                aria-expanded="false">
+          ☰
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="topic1.html">Introduction</a></li>
+          <li><a href="topic2.html">Features & Case Study</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <section id="intro">
-      <h1>Progressive Web Applications (PWAs)</h1>
-      <p>Welcome to our research project on Progressive Web Applications. Here, we explore the technology behind PWAs, their benefits, and challenges in modern web development.</p>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Discover Progressive Web Applications</h1>
+      <p>Progressive Web Apps combine the reach of the web with the reliability and user experience of native apps. Learn how modern sites leverage service workers, manifests, and responsive design to create engaging, installable experiences.</p>
+      <img src="https://thumbs.dreamstime.com/b/pwa-word-concept-isolated-white-progressive-web-application-software-development-technology-creative-illustration-banner-366713312.jpg" alt="Illustration of Progressive Web App concept">
+    </div>
+  </section>
 
-    <!-- Additional Theory Section -->
-    <section id="theory">
-      <h2>Theoretical Background</h2>
-      <p>
-        Progressive Web Applications (PWAs) combine the best features of both web and mobile applications to provide users with a fast, reliable, and engaging experience. The concept emerged as web technologies advanced, enabling websites to offer offline capabilities, push notifications, and a more native-like user interface.
-      </p>
-      <p>
-        PWAs are built using standard web technologies such as HTML, CSS, and JavaScript, yet they incorporate advanced features like service workers and web app manifests. These elements allow PWAs to work efficiently even in low or no network connectivity, thus significantly enhancing user experience.
-      </p>
-      <p>
-        The shift towards PWAs reflects a broader trend in web development: the demand for more responsive, reliable, and accessible digital experiences. This paradigm not only improves performance but also reduces development costs by eliminating the need for separate native app versions across different platforms.
-      </p>
-    </section>
-
-    <!-- Key Terms -->
-    <section id="key-terms">
-      <h2>Key Terms</h2>
+  <!-- Overview -->
+  <main class="container">
+    <article>
+      <h2>Why PWAs Matter</h2>
+      <p>With mobile traffic now surpassing desktop, developers need solutions that work reliably across devices and network conditions. PWAs address this by providing:</p>
       <ul>
-        <li>Service Worker</li>
-        <li>Web App Manifest</li>
-        <li>Responsive Design</li>
-        <li>Offline Capabilities</li>
+        <li><strong>Offline support:</strong> Cache assets and data so users can interact even without connectivity.</li>
+        <li><strong>App-like feel:</strong> Home-screen installation, full-screen display, and smooth performance.</li>
+        <li><strong>Automatic updates:</strong> New content is delivered seamlessly whenever the user is online.</li>
       </ul>
-    </section>
-
-    <!-- Table of Contents -->
-    <section id="contents">
-      <h2>Table of Contents</h2>
-      <ol>
-        <li><a href="what-is-pwa.html">What is a PWA?</a></li>
-        <li><a href="pwa-benefits-challenges.html">Benefits &amp; Challenges</a></li>
-        <li><a href="resources.html">Resources and References</a></li>
-      </ol>
-    </section>
+      <p>Whether you’re building an e-commerce portal, a news reader, or a productivity tool, PWAs can boost engagement, retention, and conversion. Click “Introduction” to understand the core technologies behind them.</p>
+    </article>
   </main>
 
   <!-- Footer -->
-  <footer id="footer">
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 PWA Explorer</p>
+    </div>
   </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu   = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+      navMenu.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
